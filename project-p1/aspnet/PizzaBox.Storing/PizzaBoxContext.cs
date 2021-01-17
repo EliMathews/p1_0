@@ -13,7 +13,7 @@ namespace PizzaBox.Storing
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
-      builder.Entity<Order>().HasKey(o => o.EntityId);
+      builder.Entity<Order>().HasKey(o => o.EntityId); //this statement tells efcore that the order table has pk entityid
       builder.Entity<Store>().HasKey(s => s.EntityId);
 
       builder.Entity<Store>().HasData(
