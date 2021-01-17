@@ -8,6 +8,7 @@ using PizzaBox.WebClient.Models;
 
 namespace PizzaBox.WebClient.Controllers
 {
+  [Route("[controller]")]
   public class OrderController : Controller
   {
     private readonly PizzaBoxContext _ctx;
