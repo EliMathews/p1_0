@@ -26,6 +26,8 @@ namespace PizzaBox.WebClient.Controllers
         var order = new Order()
         {
           DateModified = DateTime.Now,
+          Customer = _ctx.Customers.FirstOrDefault(c => c.Name == model.Customer),
+          Pizza = _ctx.Pizzas.FirstOrDefault(p => p.Name == model.Pizza),
           Store = _ctx.Stores.FirstOrDefault(s => s.Name == model.Store)
         };
 
