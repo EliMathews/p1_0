@@ -6,7 +6,7 @@ using PizzaBox.WebClient.Models;
 
 namespace PizzaBox.WebClient.Controllers
 {
-  [Route("Customer")]
+  [Route("[controller]")]
   public class CustomerController : Controller
   {
     private readonly PizzaBoxRepository _ctx;

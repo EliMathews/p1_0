@@ -29,11 +29,6 @@ namespace PizzaBox.Storing
       return _ctx.Stores.Select(s => s.Name).ToList();
     }
 
-    /* public void CreateOrder()
-    {
-      var order = new Order{Customer = OrderViewModel.Customer};
-
-    } */
 
     /* public void SaveOrder()
     {

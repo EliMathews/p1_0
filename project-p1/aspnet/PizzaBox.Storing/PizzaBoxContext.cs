@@ -13,6 +13,11 @@ namespace PizzaBox.Storing
 
     public PizzaBoxContext(DbContextOptions<PizzaBoxContext> options) : base(options) { }
 
+    public PizzaBoxContext()
+    {
+
+    }
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
       builder.Entity<Customer>().HasKey(c => c.EntityId);
