@@ -20,12 +20,13 @@ namespace PizzaBox.WebClient.Controllers
     {
       var customer = new CustomerViewModel();
 
-      customer.Order = new OrderViewModel()
+      /* customer.Order = new OrderViewModel()
       {
         Stores = _ctx.GetStores()
       };
-
+ */
       return View("home", customer);
     }
   }
 }
+

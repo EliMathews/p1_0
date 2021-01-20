@@ -17,6 +17,16 @@ namespace PizzaBox.WebClient.Controllers
       _ctx = context;
     }
 
+    [HttpGet]
+    public IActionResult Order(OrderViewModel model)
+    {
+      var OrderViewModel = new OrderViewModel()
+      {
+
+      };
+      return View("order");
+    }
+
     [HttpPost]
     [ValidateAntiForgeryToken]
     public IActionResult Post(OrderViewModel model)
